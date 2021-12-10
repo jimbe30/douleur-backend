@@ -1,2 +1,8 @@
 /target
-/output/
+/output
+/build
+/bin
+/.settings
+/.vscode
+.project
+.classpath
