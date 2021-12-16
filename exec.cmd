@@ -1,1 +1,1 @@
-java -Dserver.port=6969 -jar C:\dev_demo\git-repositories\douleur-backend\target\douleur-spring-rest.jar "--app.context=recette" "--spring.profiles.active=R7"
+java -Dserver.port=6969 -jar C:\dev_demo\git-repositories\douleur-heroku\target\douleur-spring-rest.jar "--app.context=recette" "--spring.profiles.active=R7"
