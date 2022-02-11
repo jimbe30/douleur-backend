@@ -13,7 +13,7 @@ import java.util.List;
  */
 @Entity
 @Table(name="ordonnance_type")
-@NamedQuery(name="OrdonnanceType.findAll", query="SELECT o FROM OrdonnanceType o")
+@NamedQuery(name="OrdonnanceType.findAll", query="SELECT o FROM OrdonnanceType o ORDER BY Description")
 public class OrdonnanceType implements Serializable {
 	private static final long serialVersionUID = 1L;
 

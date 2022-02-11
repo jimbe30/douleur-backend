@@ -5,6 +5,7 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import net.jimbe.douleur.ordonnanceType.beans.ReferentielMedicaments;
@@ -40,7 +41,7 @@ public class OrdonnanceTypeService {
 	
 	
 	public List<OrdonnanceType> lister() {
-		List<OrdonnanceType> all = ordonnanceTypeRepository.findAll();
+		List<OrdonnanceType> all = ordonnanceTypeRepository.findAll(Sort.by("Description"));
 		return all;
 	}
 	
